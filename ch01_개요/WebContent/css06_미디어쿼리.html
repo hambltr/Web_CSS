@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+	미디어쿼리
+		: 미디어 타입, 미디어 특성, 논리연산자를 이용해서 출력 대상이 되는 미디어의 조건을 설정한다.
+		: 특정 미디어(장치)에 적용되는 스타일을 좀 더 자세히 지정할 수 있다.
+		
+		: 미디어 쿼리는  대소문자를 구분하지 않는다.
+		: 연산자
+			: and : 여러 미디어의 특징을 하나로 합친다.
+			: or(,) : 쉼표로 분리된 각 목록은 각각 개별 미디어 쿼리이다.
+			: not : 지정된 미디어를 부정(그 외에)
+			: only: 특정 미디어만 
+			
+		: 기본문법
+			:	@media 장치 and (미디어특성) and (미디어특성:값) {스타일}
+						----
+					  (생략:모든) 
+				
+				:미디어특성
+					: width : 창의 너비
+					: height : 창의 높이
+					: device-width : display의 너비
+					: device-height : display의 높이
+					: orientation : display의 방향
+					: aspect-ratio : 창의 가로세로 비율
+					: color : 칼라
+					: monochrome : 흑백
+					: resolution : 해상도
+					
+					
+				
+
+				@media (min-width:700px){background-color: yellow}
+				@media screen and (min-width:400px) and (max-width:700px){스타일 지정}
+				@media screen and (color) { } : pc 모니터가 칼라 일 때만
+				@media ! screen and (color) { } : PC 모니터를 제외한~
+				@media only screen and (color) { } : 칼라 모니터 일 때만
+			
+		
+				
+				
+				
+ -->
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta
+	name="viewport"
+	content="width= device-width,intial-scale=1.0">
+	
+<link rel="stylesheet" type="text/css" href="./media.css">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		text-align: center;
+	}
+	
+	div{
+		margin: 0 auto;
+		padding: 10px;
+		color: black;
+		font-family: Impact,sans-serif, "굴림체";
+		font-size: 50vh;
+	}
+</style>
+</head>
+<body>
+	<div id="sample">WIDTH</div>
+</body>
+</html>

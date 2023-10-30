@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 
+	가상클래스: CSS에서 제공되는 클래스선택자
+	
+		: 마우스 :			선택자:hover	-	마우스가 올라갈 때 스타일 적용
+						선택자:activate - 마우스로 누르고 있는 샇황에서의 스타일
+						
+		: 폼 요소: 		선택자:focus	-	폼 요소가 키보드나 마우스 클랙으로 포커스를 받을 때의 스타일
+		: 링크    :			a:link		- 방문하지 않은 링크에 스타일 적용
+			  			a:visited	- 방문한 링크에 스타일 적용
+		
+		: 글자  :			p:first-letter - 블록형 태그(p,div)에서 첫글자에 스타일 적용
+						p:first-line -	첫 번째 라인의 스타일
+						
+		: 구조 (li) :		:nth-child(even) - 짝수번 째 모든 자식태그의 스타일
+						:nth-child(1)	- 첫 번째 자식 태그 스타일
+						:first-child	- 첫 번째 자식
+						:last-child		- 마지막 자식
+				*중요*	:before			- 요소의 맨 앞에 배치하는 마크업 없는(태그가 없는) 가상 요소
+				*중요*	:after			- 요소의 맨 뒤에 배치하는 마크업 없는(태그가 없는) 가상 요소
+				
+				
+		마지막 자식 요소는 빨간색 테두리
+		세번째 자식 요소는 파란색 테두리
+		첫번째 자식 요소는 오렌지색 테두리
+		짝수번째 자식 요소들은 노란색 배경색
+		2번째를 기준으로 3개를 건너뛴 자식은 글자색 파란색
+
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	a{color: #000;}
+	a:hover{color: #f00; font-size: 50px; }
+	a#t:visited{color: orange;}
+	
+	.sample{width: 500px; border-width: 1px; border-color: black; border-style: solid;
+			padding: 5px;}
+			
+	.sample li{list-style: none; background-color: lightgray; margin: 5px;}
+	
+	.sample :first-child {border-width: 2px; border-color: orange; border-style: solid;}
+	.sample :nth-child(3) {border-width: 2px; border-color: blue; border-style: solid;}
+	.sample :last-child {border-width: 2px; border-color: red; border-style: solid;}
+	.sample :nth-child(even){border-width: 2px; border-color: yellow; border-style: solid;}
+	.sample :nth-child(3n+2){color:blue;}
+	
+	
+	
+	
+	
+</style>
+</head>
+<body>
+	<ul>
+		<li><a id="t" href="https://www.naver.com" target="_blank">Company</a></li>
+		<li><a href="#">Product</a></li>
+		<li><a class="p" href="https://www.daum.net" target="_blank">Service</a></li>
+	</ul>
+	
+	<ul class="sample child">
+		<li>child1(first)</li>
+		<li>child2</li>
+		<li>child3</li>
+		<li>child4</li>
+		<li>child5</li>
+		<li>child6</li>
+		<li>child7(last)</li>
+	</ul>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+header,footer,section,article,hgroup,
+figure,figcation,nav,menu{
+	display: block;
+}
+
+body{
+	margin: 0;
+	padding: 30px;
+	background-color: #f6f6f6;
+	color: #454545;
+}
+
+h1{
+	margin: 0 0 10px 0;
+	padding: 5px 10px;
+	background-color: #ccc;
+	color: #666;
+	font-size: 120%;
+	text-shadow: 1px 1px 0px #fff;
+	line-height: 1;
+}
+.category{
+	margin-bottom: 30px;
+	padding: 15px;
+	border: 1px solid#ccc;
+}
+.category > section{
+	margin: 10px 0;
+	padding: 10px 30px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+.category > h2{
+	border-bottom: 1px solid #ccc;
+}
+
+/* 이후 작성 */
+
+
+
+
+
+
+
+
+
+
+

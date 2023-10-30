@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+	상속
+		: 부모 요소의 스타일을 자식은 상속받는다.
+		: inherit - 강제상속 : 상속받지 않는 스타일 규칙을 강제로 상속시킬때 사용
+		: initial - 초기화
+		: unset   - 원래대로 돌리는 것
+		* https://www.w3.org/tr/css2/propidx.html
+
+ -->
+
+
+
+
+
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	body{
+		text-align: center;
+	}
+	
+	div{
+		margin: 10px;
+		padding: 10px;
+		color: #ffffff;
+		font-family: Impact,sans-serif;
+		font-size: 50vh;
+	}
+	
+	@media only screen and (max-width: 600px){
+		body{
+			background-color: darkseagreen;
+		}
+	}
+
+	@media ! screen and (max-width: 600px){
+		body{
+			background-color: yellow;
+		}
+	}
+	
+	@media only screen and (max-width:6000px){
+		body{
+			background-color: magenta;
+		}
+	}
+	
+	@media all and (orientation:portrait){
+		#sample{
+			color: orange;
+			text-shadow: green 10px 10px;
+		}
+	}
+	
+	@media screen and (orientation:landscape){
+		#sample{
+			color: white;
+			text-shadow: darkgray 10px 10px;
+		}
+	}
+	
+
+</style>
+</head>
+<body>
+	<div id="sample">WIDTH</div>
+</body>
+</html>

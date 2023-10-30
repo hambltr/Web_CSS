@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+	body{}
+	
+	h1{color: blue; background-color: white; width:100%; 
+		padding: 0; border: 0; margin-top: 0;}
+	h4 {margin-bottom:0; margin-top: 0;}
+	
+	
+	ul{list-style: none; border: 2px; border-style: solid; border-color: black;
+		padding: 5px 10px 2px;}
+	li{background-color: black; color:white; margin-bottom: 3px;
+		width: 60%}
+	.sl1{background-color: white; padding: 10px; margin: 10px;}	
+	#ul1, #ul2, #ul3{border: 2px; border-style: solid; border-color: black;
+		 margin-top: 0; margin-bottom: 15px;}
+		 
+	#ul3 :nth-child(1) {width: 95%}
+	#ul3 :nth-child(3) {width: 95%}
+	
+	section{background-color: lightgreen;}
+	
+	#sp1{color: orange;}
+	#sp2{background-color: yellow; color: black;}
+	
+	div>p{color: blue; margin-top: 0; font-size: 15px;}
+
+</style>
+</head>
+<body>
+	<section>
+		<h1>학습과목</h1>
+		<div class="sl1">
+			<h4>HTML</h4>
+			<ul id="ul1">
+				<li>HTML5개요</li>
+				<li>문서만들기</li>
+				<li><span id="sp1">구조화와 폼</span></li>
+			</ul>
+		</div>
+		
+		<div class="sl1">
+			<h4>CSS</h4>
+			<ul id="ul2">
+				<li>웹 페이지 꾸미기</li>
+				<li>고급 <span id="sp2">활용</span></li>
+			</ul>
+		</div>
+		
+		<div class="sl1">
+			<h4>JavaScript</h4>
+			<ul id="ul3">
+				<li>자바스크립트언어</li>
+				<li>코어객체와배열</li>
+				<li>Document</li>
+			</ul>
+		</div>
+		<br>
+	</section>
+	<div>
+	<p>웹 프로그래밍을 학습합니다.<br>
+	웹 프로그래밍을 학습합니다.</p>
+	</div>
+</body>
+</html>

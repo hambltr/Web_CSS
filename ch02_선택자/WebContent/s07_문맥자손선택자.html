@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	p em{font-size: 1.5em; color: lime;}
+	h5 span{color: yellow;}
+	p span{color: orange;}
+	h5 em{color: pink;}
+	ul li{color: blue;}
+	ul>li p{font-size: 50px;}
+
+</style>
+</head>
+<body>
+	<p>
+		특정 상황에 한정된 선택자를 <em>문맥선택자</em>라고 하고,<br>
+		<em>태그 (공백) 태그</em>와 같은 형식으로 사용한다.
+	</p>
+	<hr>
+	<h5>
+		부모와 자식태그를 활용해서
+		<p>스타일을 <span>적용</span>하는 것이 문맥선택자 입니다.</p>
+		<em>부모와 자식태그</em>를 활용해서 선택하는 것이 문맥선택자 또는<br>
+		자손선택자 입니다.
+	</h5>
+	<ul>
+		<li>내가 좋아하는 음식
+			<ul>
+				<li>피자</li>
+				<li>스파게티</li>
+			</ul>
+			<p>자주 먹습니다.(li 태그 상속)</p>
+		</li>
+	</ul>
+	
+	
+</body>
+</html>

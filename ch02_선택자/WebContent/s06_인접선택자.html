@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+	h1을 기준으로 h2의 글자색은 blue
+	h1을 기준으로 h3의 글자색은 red (틀린명제)
+	ul을 기준으로 p의 글자색은 aqua
+	id a를 기준으로 li의 글자색은 darkkhaki
+	
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	
+
+	h1+h2{color: blue;}
+	h1+h3{color: red;}
+	ul+p{color: aqua;}
+	#a+li{color: darkkhaki;}
+	h1+p{color: orange;}
+
+</style>
+</head>
+<body>
+	<h1>엑스포 안내</h1>
+	<h2>책자를 배부하고 있습니다.</h2>
+	<h3>안내 데스크를 활용하시길 바랍니다.</h3>
+	
+	<ul>
+		<li id="a">1번</li>
+		<li>2번</li>
+	</ul>
+	<p>3번</p>
+	<p>4번</p>
+</body>
+</html>

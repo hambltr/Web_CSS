@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import url("./test02.css");
+
+p{
+	font-size: 30px;
+	color: blue;
+	font-family: 궁서체, 바탕체, 굴림체, Helvetica, Dialog;
+	
+}
