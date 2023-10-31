@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- 
+	시작되는:		E[	id	^=	"bar"]	:	bar로 시작되는 아이디
+	끝나는   :		E[	id	$=	"bar"]	:	bar로 끝나는 아이디
+	포함하는:		E[	id	*=	"bar"]	:	bar를 포함하는 아이디		
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	
+	[class ^= "int"] {color: blue; font-size:30px;}
+	ol [class *="member"] {color: green;}
+	ol [class $= "no"] {color: red;}
+	
+</style>
+
+</head>
+<body>
+	<ul class="sample">
+		<li class="intromember">class="intromember"</li>
+		<li class="memberintro">class="memberintro"</li>
+		<li class="intromemberno">class="intromemberno"</li>
+	</ul>
+	<ol>
+		<li class="intromember">class="intromember"</li>
+		<li class="memberintro">class="memberintro"</li>
+		<li class="intromemberno">class="intromemberno"</li>
+	</ol>
+</body>
+</html>
